@@ -14,7 +14,7 @@ class SignUp extends Component {
       adminWallets: [],
       docAadhars: [],
       walletAddress: "",
-      location: "",
+      location: ""  ,
       speciality: "",
       validate: <div></div>,
     };
