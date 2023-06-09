@@ -15,6 +15,8 @@ function AllDoctorRender({ doctor }) {
         </CardText>
         <CardText>
           <small>Role: {doctor?.speciality}</small>
+          <br />
+          <small>location: {doctor?.location}</small>
         </CardText>
       </CardBody>
     </Card>
@@ -109,9 +111,9 @@ class AllMemComponent extends Component {
     return (
       <div>
         <br />
-        <h2>All Members</h2>
+        <h2>All Members & Doctor </h2>
         <br />
-        <h4>Admins</h4>
+        <h4>All Admins</h4>
         <br />
         <div className="row1">{AllAdmins}</div>
         <br />

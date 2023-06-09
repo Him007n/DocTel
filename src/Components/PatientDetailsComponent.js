@@ -35,6 +35,7 @@ class PatientDetailsComp extends Component {
       treatmentsgone: "",
       validate: false,
       validateText: "",
+      dob:0,
     };
     this.Bloodtype = this.Bloodtype.bind(this);
     this.Gender = this.Gender.bind(this);
@@ -122,6 +123,7 @@ class PatientDetailsComp extends Component {
         height: res.height,
         gender: genderLocal,
         bloodtype: bloodtypeLocal,
+        dob:res.dob,
         age: res.age,
         location: res.location,
         patient_state: res.patient_state,
@@ -187,11 +189,15 @@ class PatientDetailsComp extends Component {
               <small>Gender : {this.state.gender}</small>
             </CardText>
             <CardText>
+              <small>DOB : {this.state.dob}</small>
+            </CardText>
+            <CardText>
               <small>Location : {this.state.location}</small>
             </CardText>
             <CardText>
               <small>Treatments Undergone : {this.state.treatmentsgone}</small>
             </CardText>
+           
           </CardBody>
         </Card>
         <br />
